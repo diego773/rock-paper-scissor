@@ -68,3 +68,37 @@ body {
 }
 
 /* MAIN */
+.main-game {
+}
+
+/* GAME SECTION OPTIONS */
+/* game options */
+.game-options {
+}
+
+/* rock image */
+.rock-img {
+  border: 1px solid white;
+  border-radius: 50%;
+  border-width: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 0px 18px #dd405d;
+}
+
+/* paper image */
+.paper-img {
+  border: 1px solid white;
+  border-radius: 50%;
+  border-width: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 0px 18px #5671f5;
+}
+
+/* scissors image */
+.scissors-img {
+  border: 1px solid white;
+  border-radius: 50%;
+  border-width: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 0px 18px #eca922;
+}

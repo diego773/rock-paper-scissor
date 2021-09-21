@@ -95,6 +95,7 @@ body {
   background-color: white;
   box-shadow: 1px 1px 0px 18px #dd405d;
   display: flex;
+  transform: translate(230px, 64px);
 }
 
 /* paper image */
@@ -105,6 +106,7 @@ body {
   border-width: 30px;
   background-color: white;
   box-shadow: 1px 1px 0px 18px #5671f5;
+  transform: translate(-140px, -120px);
 }
 
 /* scissors image */
@@ -114,4 +116,5 @@ body {
   border-width: 30px;
   background-color: white;
   box-shadow: 1px 1px 0px 18px #eca922;
+  transform: translate(-115px, -120px);
 }

@@ -80,7 +80,7 @@ body {
   width: 576px;
   height: 430px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   justify-content: space-between;
   align-items: center;
@@ -89,32 +89,75 @@ body {
 
 /* rock image */
 .rock-img {
-  border: 1px solid white;
-  border-radius: 50%;
-  border-width: 30px;
+  border: none;
+  padding: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   background-color: white;
   box-shadow: 1px 1px 0px 18px #dd405d;
-  display: flex;
-  transform: translate(230px, 64px);
+  transform: translate(215px, 53px);
+}
+
+/* made an additional class in button div */
+.button-rock {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+/* hoover button */
+.button-rock:hover {
+  transform: translate3d(215px, 70px, 0px);
 }
 
 /* paper image */
 .paper-img {
-  border: 1px solid white;
-  display: block;
-  border-radius: 50%;
-  border-width: 30px;
+  border: none;
+  padding: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   background-color: white;
   box-shadow: 1px 1px 0px 18px #5671f5;
-  transform: translate(-140px, -120px);
+  transform: translate(-130px, -120px);
+}
+
+/* made an additional class in button div */
+.button-paper {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+/* hoover button */
+.button-paper:hover {
+  transform: translate3d(-138px, -130px, 0px);
 }
 
 /* scissors image */
 .scissors-img {
-  border: 1px solid white;
-  border-radius: 50%;
-  border-width: 30px;
+  border: none;
+  padding: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   background-color: white;
   box-shadow: 1px 1px 0px 18px #eca922;
-  transform: translate(-115px, -120px);
+  transform: translate(-105px, -120px);
+}
+
+/* made an additional class in button div */
+.button-scissors {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+/* hoover button */
+.button-scissors:hover {
+  transform: translate3d(-95px, -130px, 0px);
 }

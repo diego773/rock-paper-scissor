@@ -73,7 +73,7 @@ body {
   font-weight: 700;
 }
 
-/* MAIN */
+/* MAIN CONTAINER */
 
 /* GAME SECTION OPTIONS */
 
@@ -91,6 +91,7 @@ main .game-options {
   margin-top: 100px;
 }
 
+/* positions all the button around the triangle */
 button {
   margin-right: 50px;
   margin-left: 50px;
@@ -101,10 +102,13 @@ button {
   border: none;
   padding: 40px;
   text-align: center;
-  font-size: 16px;
   background-color: white;
   box-shadow: 1px 1px 0px 18px #5671f5;
-  /* transform: translate(-130px, -120px); */
+}
+
+/* paper png in src */
+.paper-img img {
+  width: 100%;
 }
 
 /* made an additional class in button div */
@@ -112,8 +116,6 @@ button {
   border-radius: 50%;
   transition: all 0.25s;
   display: flex;
-  /* margin: 55px 75px 300px; */
-  /* margin-right: 100px; */
   cursor: pointer;
 }
 
@@ -127,10 +129,14 @@ button {
   border: none;
   padding: 40px;
   text-align: center;
-  font-size: 16px;
+  /* font-size: 16px; */
   background-color: white;
   box-shadow: 1px 1px 0px 18px #eca922;
-  /* transform: translate(-105px, -120px); */
+}
+
+/* scissors png in src */
+.scissors-img img {
+  width: 100%;
 }
 
 /* made an additional class in button div */
@@ -138,12 +144,6 @@ button {
   border-radius: 50%;
   transition: all 0.25s;
   display: flex;
-  /* margin: 55px 75px 300px; */
-  /* position: relative;
-  left: 150px; */
-  /* bottom: 125px; */
-  /* margin-left: 100px; */
-
   cursor: pointer;
 }
 
@@ -159,10 +159,9 @@ button {
   text-align: center;
   background-color: white;
   box-shadow: 1px 1px 0px 18px #dd405d;
-
-  /* transform: translate(215px, 53px); */
 }
 
+/* rock png in src */
 .rock-img img {
   width: 100%;
 }
@@ -172,11 +171,6 @@ button {
   border-radius: 50%;
   transition: all 0.25s;
   display: flex;
-  /* position: relative; */
-  /* left: 150px; */
-  /* bottom: 50px; */
-  /* margin-left: 100px; */
-
   cursor: pointer;
 }
 

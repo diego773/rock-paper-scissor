@@ -9,7 +9,7 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-/* the whole web page */
+/*======= WEB PAGE WRAPPER ==============*/
 .wrapper {
   background: radial-gradient(130% 130% at 50% 0%, #1f3756 0%, #141539 100%);
   width: 100vw;
@@ -21,8 +21,7 @@ body {
   margin: 0 auto;
 }
 
-/* header section */
-
+/*======= HEADER ==============*/
 /* scoreboard */
 .scoreboard {
   width: 700px;
@@ -54,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 50px; */
+  padding: 50px;
 }
 
 /* score-box header */
@@ -73,10 +72,7 @@ body {
   font-weight: 700;
 }
 
-/* MAIN CONTAINER */
-
-/* GAME SECTION OPTIONS */
-
+/*======= MAIN MIDDLE CONTAINER ==============*/
 /* game options */
 main .game-options {
   background-image: url("./images/bg-triangle.png");
@@ -121,7 +117,7 @@ button {
 
 /* hoover button */
 .button-paper:hover {
-  transform: translate3d(-35px, -35px, 0px);
+  transform: translate3d(-30px, -35px, 0px);
 }
 
 /* scissors image */
@@ -177,6 +173,38 @@ button {
 /* hoover button */
 .button-rock:hover {
   transform: translate3d(0px, 35px, 0px);
+}
+
+/*======= FOOTER ==============*/
+/* Footer container */
+.footer-container {
+  width: 70vw;
+  /* height: 30vh; */
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+/* Footer button */
+.button-rules {
+  border: solid #606e85;
+  border-radius: 8px;
+  border-width: 2px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer button name RULES */
+.button-rules h4 {
+  color: #c4cfdf;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+  letter-spacing: 2.5px;
 }
 
 /* Extra small devices (phones, 600px and down) */

@@ -14,36 +14,39 @@
 </head>
 
 <body>
+  <!--======== WRAPPER ===============-->
   <div class="wrapper">
-    <header class="scoreboard">
+    <!--======= HEADER ==============-->
+    <header class="scoreboard" id="scoreboard">
       <div class="title">
         <img src="assets/images/logo.png" alt="Title of the game in all capital letters ROCK, PAPER, SCISSORS">
       </div>
-      <div class="score-box">
+      <div class="score-box" id="score-box">
         <p class="score">SCORE</p>
         <h1 class="score-display">12</h1>
       </div>
     </header>
+    <!--======= MAIN MIDDLE CONTAINER ==============-->
     <main class="main-game">
       <section class="game-options">
-        <button class="paper-img button-paper" role="button" aria-pressed="false">
-          <img src="/assets/images/icon-paper.png">
+        <button class="paper-img button-paper" id="button-paper" role="button" aria-pressed="false">
+          <img src="/assets/images/icon-paper.png" alt="Button with a open hand for paper">
         </button>
-        <button class="scissors-img button-scissors" role="button" aria-pressed="false">
-          <img src="/assets/images/icon-scissors.png">
+        <button class="scissors-img button-scissors" id="button-scissors" role="button" aria-pressed="false">
+          <img src="/assets/images/icon-scissors.png" alt="Button with 2 fingers up for paper">
         </button>
-        <button class="rock-img button-rock" role="button" aria-pressed="false">
-          <img src="assets/images/icon-rock.png">
+        <button class="rock-img button-rock" id="button-rock" role="button" aria-pressed="false">
+          <img src="assets/images/icon-rock.png" alt="Button with a close fist for rock">
         </button>
       </section>
     </main>
-
-
-
-
-
+    <!--======= FOOTER ==============-->
+    <footer class="footer-container">
+      <div class="button-rules" type="button">
+        <h4>RULES</h4>
+      </div>
   </div>
-
+  </footer>
 </body>
 <script src="./assets/script.js"></script>
 

@@ -38,7 +38,6 @@ body {
 /*title logo */
 .title img {
   display: flex;
-  /* width: 85%; */
   margin-left: 30px;
 }
 
@@ -172,14 +171,87 @@ button {
 
 /* hoover button */
 .button-rock:hover {
-  transform: translate3d(0px, 35px, 0px);
+  transform: translate3d(0px, -10px, -5px);
 }
 
+/* Choices picked */
+/* .choices-picked {
+  width: 980px;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+} */
+
+/* Div result in choices-picked section */
+/* .choices-picked .result {
+  margin-top: 110px;
+} */
+
+/* option picked */
+/* .user h2 {
+  color: white;
+  margin-bottom: 70px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2.5px;
+  font-size: 20px;
+} */
+
+/* you win or lose for the user */
+/* h3 {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: center;
+} */
+
+/* play again title may turn red when user loses */
+/* .result h4 {
+  color: #3b4363;
+  align-items: center;
+  font-weight: 100;
+  font-size: 16px;
+} */
+
+/* play again button */
+/* .play-again {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  padding: 20px;
+  width: 200px;
+  display: none;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+} */
+
+/* house choice */
+/* .house h2 {
+  color: white;
+  margin-bottom: 70px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2.5px;
+  font-size: 20px;
+} */
+
+/* .choices-picked > div {
+  flex: 1;
+} */
 /*======= FOOTER ==============*/
 /* Footer container */
 .footer-container {
-  width: 70vw;
-  /* height: 30vh; */
+  width: 1100px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -191,8 +263,8 @@ button {
   border: solid #606e85;
   border-radius: 8px;
   border-width: 2px;
-  width: 150px;
-  height: 50px;
+  width: 130px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +279,120 @@ button {
   letter-spacing: 2.5px;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Tablets */
+@media screen and (max-width: 1100px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /*======= WEB PAGE WRAPPER ==============*/
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Footer container */
+  .footer-container {
+    width: 100%;
+  }
+
+  /* Footer button */
+  .button-rules {
+    margin-bottom: 190px;
+    margin-right: 20px;
+  }
+}
+
+/* Large smartphone or tablets */
+
+@media screen and (max-width: 800px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /*======= WEB PAGE WRAPPER ==============*/
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /*======= HEADER ==============*/
+  /* scoreboard */
+  .scoreboard {
+    width: 700px;
+    height: 150px;
+    border: solid #606e85;
+    border-width: 3px;
+    border-radius: 15px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*title logo */
+  .title img {
+    display: flex;
+  }
+
+  /* score box */
+  .score-box {
+    width: 18%;
+    height: 80%;
+  }
+
+  /*======= MAIN MIDDLE CONTAINER ==============*/
+  /* game options */
+
+  main .game-options {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; */
+  }
+
+  /* hoover button */
+  .button-rock:hover {
+    transform: translate3d(0px, 35px, 0px);
+  }
+
+  /* Footer container */
+  .footer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer button */
+  .button-rules {
+    width: 130px;
+    height: 15%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer button name RULES */
+  .button-rules h4 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+  }
+}
+
+/* smartphones */
 @media only screen and (max-width: 600px) {
   * {
     padding: 0;
@@ -215,8 +400,128 @@ button {
     box-sizing: border-box;
   }
 
+  /*======= WEB PAGE WRAPPER ==============*/
   .wrapper {
-    /* width: 100%; */
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; */
+  }
+  /*======= HEADER ==============*/
+  /* scoreboard */
+  .scoreboard {
+    width: 90%;
+    /* height: 5%; */
+  }
+
+  /*title logo */
+  .title img {
+    width: 70%;
+    margin-left: 15px;
+  }
+
+  /* score box */
+  .score-box {
+    width: 5%;
+    height: 10%;
+    margin-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  /* score-box header */
+  .score-box p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 2.5px;
+    margin-top: 25px;
+  }
+
+  /* score display */
+  .score-box h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  /*======= MAIN MIDDLE CONTAINER ==============*/
+  /* game options */
+
+  main .game-options {
+    background-image: url("./images/bg-triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  /* positions all the button around the triangle */
+  button {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  /* paper png in src */
+  .paper-img img {
+    width: 100%;
+  }
+
+  /* scissors png in src */
+  .scissors-img img {
+    width: 100%;
+  }
+
+  /* rock png in src */
+  .rock-img img {
+    width: 100%;
+  }
+
+  /* Footer container */
+  .footer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer button */
+  .button-rules {
+    width: 130px;
+    height: 15%;
+    margin-bottom: 45px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /* Footer button name RULES */
+  .button-rules h4 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -256,9 +561,6 @@ button {
     font-size: 50px;
     font-weight: 600;
   }
-  /* .main-game {
-    width: 0%;
-  } */
   .game-options {
     width: 100%;
     background-repeat: no-repeat;
@@ -286,10 +588,8 @@ button {
   .paper-img {
     border: none;
     padding: 25px;
-    /* margin: 30px 50px; */
     text-align: center;
     display: inline-block;
-    /* transform: translate(-100px, -100px); */
   }
   .button-paper {
     width: 25%;
@@ -301,7 +601,6 @@ button {
   .scissors-img {
     border: none;
     padding: 25px;
-    /* font-size: 0px; */
     margin: 30px 50px;
     text-align: center;
     display: inline-block;
@@ -311,7 +610,4 @@ button {
   .button-scissors {
     width: 25%;
   }
-  /* .button-scissors:hover {
-    width: 50%;
-  } */
-}
+} */

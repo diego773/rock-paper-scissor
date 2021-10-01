@@ -171,36 +171,38 @@ button {
 
 /* hoover button */
 .button-rock:hover {
-  transform: translate3d(0px, -10px, -5px);
+  transform: translate3d(0px, 35px, 0px);
 }
 
+/*======= PLAYERS CHOICES RESULTS  =========*/
+
 /* Choices picked */
-/* .choices-picked {
+.choices-picked {
   width: 980px;
   display: none;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 50px;
-} */
+}
 
 /* Div result in choices-picked section */
-/* .choices-picked .result {
+.choices-picked .result {
   margin-top: 110px;
-} */
+}
 
 /* option picked */
-/* .user h2 {
+.user h2 {
   color: white;
   margin-bottom: 70px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 2.5px;
   font-size: 20px;
-} */
+}
 
 /* you win or lose for the user */
-/* h3 {
+h3 {
   color: white;
   font-size: 50px;
   font-weight: 900;
@@ -208,45 +210,45 @@ button {
   margin-left: 50px;
   margin-right: 50px;
   align-items: center;
-} */
-
-/* play again title may turn red when user loses */
-/* .result h4 {
-  color: #3b4363;
-  align-items: center;
-  font-weight: 100;
-  font-size: 16px;
-} */
+}
 
 /* play again button */
-/* .play-again {
+.play-again {
   background-color: white;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
   height: 40px;
   padding: 20px;
   width: 200px;
-  display: none;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 15px;
   margin-left: 50px;
   margin-right: 50px;
-} */
+}
+
+/* play again title may turn red when user loses */
+.play-again h4 {
+  color: #3b4363;
+  font-weight: 100;
+  font-size: 16px;
+  display: flex;
+  letter-spacing: 2.5px;
+}
 
 /* house choice */
-/* .house h2 {
+.house h2 {
   color: white;
   margin-bottom: 70px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 2.5px;
   font-size: 20px;
-} */
+}
 
-/* .choices-picked > div {
-  flex: 1;
-} */
 /*======= FOOTER ==============*/
 /* Footer container */
 .footer-container {
@@ -260,6 +262,7 @@ button {
 
 /* Footer button */
 .button-rules {
+  background: transparent;
   border: solid #606e85;
   border-radius: 8px;
   border-width: 2px;
@@ -277,6 +280,10 @@ button {
   font-weight: 600;
   padding: 10px;
   letter-spacing: 2.5px;
+}
+
+.rules-img {
+  display: none;
 }
 
 /* Tablets */

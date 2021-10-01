@@ -23,54 +23,59 @@
       </div>
       <div class="score-box" id="score-box">
         <p class="score">SCORE</p>
-        <h1 class="score-display" id="score-display">12</h1>
+        <h1 class="score-display" id="score-display">0</h1>
       </div>
     </header>
     <!--======= MAIN MIDDLE CONTAINER ==============-->
     <main class="main-game">
       <!-- game option section -->
       <section class="game-options">
-        <button class="paper-img button-paper" id="button-paper" role="button" aria-pressed="false">
-          <img src="/assets/images/icon-paper.png" alt="Button with a open hand for paper">
+        <button class="paper-img button-paper" data-choice="paper">
+          <img class="paper" src="/assets/images/icon-paper.png" alt="Button with a open hand for paper">
         </button>
-        <button class="scissors-img button-scissors" id="button-scissors" role="button" aria-pressed="false">
-          <img src="/assets/images/icon-scissors.png" alt="Button with 2 fingers up for paper">
+        <button class="scissors-img button-scissors" data-choice="scissors">
+          <img class="scissors" src="/assets/images/icon-scissors.png" alt="Button with 2 fingers up for paper">
         </button>
-        <button class="rock-img button-rock" id="button-rock" role="button" aria-pressed="false">
-          <img src="assets/images/icon-rock.png" alt="Button with a close fist for rock">
+        <button class="rock-img button-rock" data-choice="rock">
+          <img class="rock" src="/assets/images/icon-rock.png" alt="Button with a close fist for rock">
         </button>
       </section>
       <!-- choices picked -->
-      <!-- <section class="choices-picked">
+      <section class="choices-picked">
         <div class="user">
           <h2 class="user-picked"> YOU PICKED
           </h2>
-          <button class="paper-img button-paper" id="button-paper" role="button" aria-pressed="false">
-            <img src="/assets/images/icon-paper.png" alt="Button with a open hand for paper">
+          <button class="paper-img button-paper" id="paper">
+            <img id="user-picked-img" src="/assets/images/icon-paper.png" alt="Button with a open hand for paper">
           </button>
         </div>
         <div class="result">
           <h3 class="you-win">YOU WIN</h3>
-          <h4 class="play-again">PLAY AGAIN</h4>
-          <h3 class="user-lose">YOU LOSE</p>
-  </div>
-  <div class="house">
-    <h2 class="house-picked">THE HOUSE PICKED</h2>
-    <button class="scissors-img button-scissors" id="button-scissors" role="button" aria-pressed="false">
-      <img src="/assets/images/icon-scissors.png" alt="Button with 2 fingers up for paper">
-    </button>
-  </div>
-  </section> -->
-
+          <h3 class="user-lose">YOU LOSE</h3>
+          <h3 class="tie-game">TIE GAME!</h3>
+          <button class="play-again" id="reset">
+            <h4 class="play">PLAY AGAIN</h4>
+          </button>
+        </div>
+        <div class="house">
+          <h2 class="house-picked">THE HOUSE PICKED</h2>
+          <button class="scissors-img button-scissors" id="scissors">
+            <img id="house-picked-img" src="/assets/images/icon-scissors.png" alt="Button with 2 fingers up for paper">
+          </button>
+        </div>
+      </section>
+      <section class="rules-container" id="container-rules">
+        <img class="rules-img" src="/assets/images/image-rules.png">
+      </section>
     </main>
     <!--======= FOOTER ==============-->
     <footer class="footer-container">
-      <div class="button-rules" type="button">
-        <h4>RULES</h4>
-      </div>
-  </div>
-  </footer>
+      <button class="button-rules">
+        <h4 class="rules">RULES</h4>
+      </button>
+    </footer>
+
+    <script src="./assets/script.js"></script>
 </body>
-<script src="./assets/script.js"></script>
 
 </html>
